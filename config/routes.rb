@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   post 'sign-up', to: 'registrations#create'
   get 'sign-in', to: 'authentication#new'
   post 'sign-in', to: 'authentication#create'
-  resources :cheeses, only: [:index]
+  resources :cheeses
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
